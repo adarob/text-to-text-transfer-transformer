@@ -50,11 +50,10 @@ setuptools.setup(
         'scipy',
         'sentencepiece',
         'six>=1.14',  # TODO(adarob): Remove once rouge-score is updated.
-        'tensorflow-text==1.15.0rc0',
+        'tensorflow-text',
         'tfds-nightly',
     ],
     extras_require={
-        'tensorflow': ['tensorflow==1.15'],
         'gcp': ['gevent', 'google-api-python-client', 'google-compute-engine',
                 'google-cloud-storage', 'oauth2client'],
         'cache-tasks': [
